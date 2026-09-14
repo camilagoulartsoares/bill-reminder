@@ -58,18 +58,23 @@ textarea { height: 72px; resize: vertical; }
 .outline { background: #fff; color: var(--blue); border: 1px solid rgba(8, 123, 157, .34); }
 .outline:hover { background: var(--sky); }
 
-.list { padding: 0; }
-.list .section-title { padding: 22px 22px 16px; }
-.list select { width: auto; margin: 0; }
-.bill { display: flex; align-items: center; gap: 13px; border-top: 1px solid var(--line); padding: 16px 22px; }
-.round { flex: none; width: 22px; height: 22px; padding: 0; border: 1px solid #aeb8c0; background: white; border-radius: 50%; cursor: pointer; }
+.list { padding: 0; overflow: hidden; box-shadow: var(--shadow); }
+.list .section-title { padding: 24px 24px 18px; margin: 0; }
+.list select { width: auto; margin: 0; padding: 9px 34px 9px 11px; font-size: 13px; font-weight: bold; }
+.bill { display: flex; align-items: center; gap: 13px; border-top: 1px solid var(--line); padding: 18px 22px; transition: background .18s ease; }
+.bill:hover { background: #f7fbfc; }
+.round { flex: none; width: 24px; height: 24px; padding: 0; border: 1px solid #aeb8c0; background: white; border-radius: 50%; cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
+.round:hover { border-color: var(--blue); transform: scale(1.08); }
 .round.done { background: var(--green); color: white; border-color: var(--green); }
 .bill-info { flex: 1; }
 .bill-info strong, .bill-info span { display: block; }
-.bill-info span, .bill-value span { font-size: 13px; color: var(--muted); margin-top: 4px; }
-.bill-value { text-align: right; }
-.link { border: 0; background: transparent; color: var(--blue); cursor: pointer; padding: 6px; }
+.bill-info span, .bill-value span { font-size: 13px; color: var(--muted); margin-top: 5px; }
+.bill-value { min-width: 104px; text-align: right; }
+.bill-value strong { font-size: 16px; }
+.link { border: 0; border-radius: 7px; background: transparent; color: var(--blue); cursor: pointer; padding: 6px; transition: background .18s ease; }
+.link:hover { background: var(--sky); }
 .danger { color: #b33b3b; }
+.danger:hover { background: #fff0f0; }
 .empty { padding: 20px 22px; }
 .toast { background: #e5f3f9; color: #07516f; border-radius: 8px; padding: 12px; margin: 0 0 18px; }
 
