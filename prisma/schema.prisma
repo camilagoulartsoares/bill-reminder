@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url = env("DATABASE_URL")
+}
+
+model Bill {
+  id String @id @default(cuid())
+  name String
+  amount Int // cents, avoids monetary rounding errors
+  dueDay Int
+  category String
+  recurring Boolean @default(true)
+  active Boolean @default(true)
+  notes String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  payments BillPayment[]
+}
+model BillPayment {
+  id String @id @default(cuid())
+  billId String
+  referenceMonth Int
+  referenceYear Int
+  paid Boolean @default(false)
+  paidAt DateTime?
+  bill Bill @relation(fields: [billId], references: [id], onDelete: Cascade)
+  @@unique([billId, referenceMonth, referenceYear])
+}
+model NotificationLog {
+  id String @id @default(cuid())
+  type String
+  referenceMonth Int
+  referenceYear Int
+  dueDay Int
+  sentAt DateTime @default(now())
+  message String
+  @@unique([type, referenceMonth, referenceYear, dueDay])
+}
