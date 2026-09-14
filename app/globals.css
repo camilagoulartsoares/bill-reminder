@@ -24,10 +24,10 @@ body {
 
 main { max-width: 1160px; margin: auto; padding: 52px 24px 64px; }
 
-header { display: flex; justify-content: space-between; align-items: start; gap: 24px; margin-bottom: 28px; }
-.eyebrow { color: var(--blue); font-weight: bold; font-size: 12px; letter-spacing: .14em; margin: 0 0 8px; }
-h1 { font-family: Georgia, serif; font-size: 42px; margin: 0; }
-.sub, .list p { color: var(--muted); margin: 8px 0 0; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px; padding: 30px 32px; background: linear-gradient(115deg, #fff 0%, #f4fbfc 100%); border: 1px solid rgba(8, 123, 157, .12); border-radius: var(--radius); box-shadow: var(--shadow); }
+.eyebrow { color: var(--blue); font-weight: bold; font-size: 11px; letter-spacing: .16em; margin: 0 0 10px; }
+h1 { font-family: Georgia, serif; font-size: clamp(36px, 5vw, 48px); letter-spacing: -.045em; line-height: .98; margin: 0; }
+.sub, .list p { color: var(--muted); margin: 10px 0 0; }
 
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
 .stats article, .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
