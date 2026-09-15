@@ -34,12 +34,15 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 5vw,
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
 .stats article, .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
 .stats article { position: relative; overflow: hidden; min-height: 126px; box-shadow: 0 6px 18px rgba(20, 56, 70, .04); transition: transform .2s ease, box-shadow .2s ease; }
+.stats article::after { content: ""; position: absolute; width: 92px; height: 92px; right: -34px; bottom: -48px; border: 18px solid rgba(8, 123, 157, .06); border-radius: 50%; }
+.stats article:nth-child(2)::after { border-color: rgba(21, 122, 87, .07); }
+.stats article:nth-child(3)::after { border-color: rgba(180, 91, 23, .07); }
 .stats article::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--blue); }
 .stats article:nth-child(2)::before { background: var(--green); }
 .stats article:nth-child(3)::before { background: var(--orange); }
 .stats article:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .stats span { font-size: 13px; color: var(--muted); display: block; }
-.stats strong { font-size: 28px; letter-spacing: -.035em; margin-top: 10px; display: block; }
+.stats strong { font-size: 28px; letter-spacing: -.035em; margin-top: 10px; display: block; position: relative; z-index: 1; }
 .green, .paid { color: var(--green) !important; }
 .orange, .pending { color: var(--orange) !important; }
 
