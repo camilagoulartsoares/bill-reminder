@@ -47,18 +47,18 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 5vw,
 .orange, .pending { color: var(--orange) !important; }
 
 .grid { display: grid; grid-template-columns: 360px 1fr; gap: 24px; align-items: start; }
-.grid > form { position: sticky; top: 24px; box-shadow: var(--shadow); }
+.grid > form { position: sticky; top: 24px; box-shadow: var(--shadow); border-top: 3px solid var(--blue); }
 .section-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .section-title h2 { font: 700 22px Georgia, "Times New Roman", serif; margin: 0; }
 label { display: block; font-size: 12px; font-weight: bold; letter-spacing: .01em; margin: 15px 0; }
-input, textarea, select { width: 100%; margin-top: 7px; border: 1px solid #cbd8de; border-radius: 10px; padding: 11px 12px; color: var(--ink); font: inherit; background: #fbfdfd; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease; }
+input, textarea, select { width: 100%; margin-top: 7px; border: 1px solid #cbd8de; border-radius: 10px; padding: 11px 12px; color: var(--ink); font: inherit; background: #fbfdfd; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease, transform .2s ease; }
 input:focus, textarea:focus, select:focus { outline: 0; border-color: var(--blue); background: #fff; box-shadow: 0 0 0 3px rgba(8, 123, 157, .13); }
 textarea { height: 72px; resize: vertical; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .check { display: flex; gap: 8px; align-items: center; font-weight: normal; }
 .check input { width: auto; margin: 0; }
 .primary, .outline { border: 0; border-radius: 10px; padding: 12px 16px; background: var(--blue); color: #fff; font-weight: bold; cursor: pointer; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
-.primary { width: 100%; margin-top: 10px; box-shadow: 0 8px 16px rgba(8, 123, 157, .18); }
+.primary { width: 100%; margin-top: 10px; box-shadow: 0 8px 16px rgba(8, 123, 157, .18); letter-spacing: .01em; }
 .primary:hover { background: var(--blue-deep); transform: translateY(-1px); }
 .outline { background: #fffefa; color: var(--blue); border: 1px solid rgba(8, 123, 157, .34); position: relative; z-index: 1; }
 .outline:hover { background: var(--sky); }
