@@ -87,6 +87,9 @@ textarea { height: 72px; resize: vertical; }
 .bill-info strong, .bill-info span { display: block; }
 .bill-info strong { font-size: 15px; }
 .bill-info span, .bill-value span { font-size: 13px; color: var(--muted); margin-top: 5px; }
+.bill-value span.paid, .bill-value span.pending { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: bold; letter-spacing: .02em; }
+.bill-value span.paid { background: #e4f3eb; }
+.bill-value span.pending { background: #fff0df; }
 .bill-value { min-width: 104px; text-align: right; }
 .bill-value strong { font-size: 16px; white-space: nowrap; }
 .link { border: 0; border-radius: 7px; background: transparent; color: var(--blue); cursor: pointer; padding: 6px; transition: background .18s ease; }
