@@ -37,7 +37,7 @@ main { animation: appear .45s ease both; }
 header { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px; padding: 34px 36px; background: linear-gradient(115deg, rgba(255, 254, 250, .98) 0%, rgba(239, 249, 247, .96) 100%); border: 1px solid rgba(8, 123, 157, .14); border-radius: var(--radius); box-shadow: var(--shadow); position: relative; overflow: hidden; }
 header::after { content: ""; position: absolute; width: 180px; height: 180px; right: -62px; bottom: -100px; border: 30px solid rgba(8, 123, 157, .08); border-radius: 50%; }
 .eyebrow { color: var(--blue); font-weight: bold; font-size: 11px; letter-spacing: .16em; margin: 0 0 10px; }
-h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 5vw, 48px); letter-spacing: -.045em; line-height: .98; margin: 0; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 5vw, 48px); letter-spacing: -.045em; line-height: .98; margin: 0; color: var(--blue-deep); text-shadow: 1px 1px 0 rgba(255, 255, 255, .8); }
 .sub, .list p { color: var(--muted); margin: 10px 0 0; }
 
 .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
