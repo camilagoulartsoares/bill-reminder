@@ -17,11 +17,14 @@
 body {
   min-width: 320px;
   margin: 0;
-  background: radial-gradient(circle at 7% 3%, rgba(157, 215, 207, .42) 0, transparent 25rem), radial-gradient(circle at 94% 18%, rgba(245, 216, 166, .22) 0, transparent 22rem), #f7faf9;
+  background: radial-gradient(circle at 7% 3%, rgba(157, 215, 207, .42) 0, transparent 25rem), radial-gradient(circle at 94% 18%, rgba(245, 216, 166, .22) 0, transparent 22rem), linear-gradient(rgba(8, 123, 157, .025) 1px, transparent 1px), linear-gradient(90deg, rgba(8, 123, 157, .025) 1px, transparent 1px), #f7faf9;
+  background-size: auto, auto, 28px 28px, 28px 28px, auto;
   color: var(--ink);
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+::selection { background: rgba(8, 123, 157, .18); color: var(--blue-deep); }
 
 main { max-width: 1160px; margin: auto; padding: 52px 24px 64px; }
 main { animation: appear .45s ease both; }
