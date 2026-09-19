@@ -51,7 +51,8 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(36px, 5vw,
 .stats article:nth-child(3)::before { background: var(--orange); }
 .stats article:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .stats span { font-size: 13px; color: var(--muted); display: block; }
-.stats strong { font-size: 28px; letter-spacing: -.035em; margin-top: 10px; display: block; position: relative; z-index: 1; }
+.stats strong { font-size: 28px; letter-spacing: -.035em; margin-top: 10px; display: block; position: relative; z-index: 1; font-variant-numeric: tabular-nums; }
+.stats article:first-child strong { color: var(--blue-deep); }
 .green, .paid { color: var(--green) !important; }
 .orange, .pending { color: var(--orange) !important; }
 
