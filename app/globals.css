@@ -81,7 +81,7 @@ textarea { height: 72px; resize: vertical; }
 .bill { display: flex; align-items: center; gap: 13px; border-top: 1px solid var(--line); padding: 18px 22px; transition: background .18s ease, padding-left .18s ease; }
 .bill:hover { background: #f7fbfc; padding-left: 26px; }
 .round { flex: none; width: 24px; height: 24px; padding: 0; border: 1px solid #aeb8c0; background: white; border-radius: 50%; cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
-.round:hover { border-color: var(--blue); transform: scale(1.08); }
+.round:hover { border-color: var(--blue); transform: scale(1.08); box-shadow: 0 0 0 4px rgba(8, 123, 157, .1); }
 .round.done { background: var(--green); color: white; border-color: var(--green); }
 .bill-info { flex: 1; }
 .bill-info strong, .bill-info span { display: block; }
