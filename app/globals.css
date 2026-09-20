@@ -118,6 +118,7 @@ button:disabled { cursor: wait; opacity: .65; }
   .bill-info { min-width: 160px; }
   .bill-value { margin-left: auto; }
   .bill .link { padding: 4px; }
+  .bill-info span { line-height: 1.45; }
 }
 
 @media (prefers-reduced-motion: reduce) {
