@@ -93,7 +93,7 @@ textarea { height: 72px; resize: vertical; }
 .bill-value { min-width: 104px; text-align: right; }
 .bill-value strong { font-size: 16px; white-space: nowrap; }
 .link { border: 0; border-radius: 7px; background: transparent; color: var(--blue); cursor: pointer; padding: 6px; transition: background .18s ease; }
-.link:hover { background: var(--sky); }
+.link:hover { background: var(--sky); text-decoration: underline; text-underline-offset: 3px; }
 .danger { color: #b33b3b; }
 .danger:hover { background: #fff0f0; }
 .empty { padding: 20px 22px; }
