@@ -26,7 +26,7 @@ body {
 
 ::selection { background: rgba(8, 123, 157, .18); color: var(--blue-deep); }
 
-main { max-width: 1160px; margin: auto; padding: 52px 24px 64px; }
+main { max-width: 1160px; margin: auto; padding: 60px 24px 72px; }
 main { animation: appear .45s ease both; }
 
 @keyframes appear {
