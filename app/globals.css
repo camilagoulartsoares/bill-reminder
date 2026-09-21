@@ -98,7 +98,12 @@ textarea { height: 72px; resize: vertical; }
 .danger { color: #b33b3b; }
 .danger:hover { background: #fff0f0; }
 .empty { padding: 20px 22px; }
-.toast { background: #e5f3f9; color: #07516f; border: 1px solid rgba(8, 123, 157, .18); border-left: 4px solid var(--blue); border-radius: 8px; padding: 12px 14px; margin: 0 0 18px; box-shadow: 0 5px 14px rgba(20, 56, 70, .06); }
+.toast { background: #e5f3f9; color: #07516f; border: 1px solid rgba(8, 123, 157, .18); border-left: 4px solid var(--blue); border-radius: 8px; padding: 12px 14px; margin: 0 0 18px; box-shadow: 0 5px 14px rgba(20, 56, 70, .06); animation: toast-in .28s ease both; }
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(8, 123, 157, .32); outline-offset: 2px; }
 button:disabled { cursor: wait; opacity: .65; }
