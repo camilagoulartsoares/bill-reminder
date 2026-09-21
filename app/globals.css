@@ -60,7 +60,7 @@ h1::first-letter { color: var(--blue); }
 .grid { display: grid; grid-template-columns: 360px 1fr; gap: 24px; align-items: start; }
 .grid > form { position: sticky; top: 24px; box-shadow: var(--shadow); border-top: 3px solid var(--blue); background: linear-gradient(180deg, #ffffff 0%, var(--paper) 100%); }
 .section-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
-.section-title h2 { font: 700 22px Georgia, "Times New Roman", serif; margin: 0; }
+.section-title h2 { font: 700 22px Georgia, "Times New Roman", serif; margin: 0; color: var(--blue-deep); }
 label { display: block; font-size: 12px; font-weight: bold; letter-spacing: .06em; text-transform: uppercase; margin: 15px 0; color: var(--blue-deep); }
 input, textarea, select { width: 100%; margin-top: 7px; border: 1px solid #cbd8de; border-radius: 10px; padding: 11px 12px; color: var(--ink); font: inherit; background: #fbfdfd; transition: border-color .2s ease, box-shadow .2s ease, background .2s ease, transform .2s ease; }
 input:hover, textarea:hover { border-color: #94bdc8; background: #fff; }
