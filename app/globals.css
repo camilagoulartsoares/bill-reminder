@@ -70,7 +70,7 @@ textarea { height: 72px; resize: vertical; }
 .check { display: flex; gap: 8px; align-items: center; font-weight: normal; }
 .check input { width: auto; margin: 0; }
 .primary, .outline { border: 0; border-radius: 10px; padding: 12px 16px; background: var(--blue); color: #fff; font-weight: bold; cursor: pointer; letter-spacing: .03em; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
-.primary { width: 100%; margin-top: 10px; box-shadow: 0 8px 16px rgba(8, 123, 157, .18); letter-spacing: .01em; }
+.primary { width: 100%; margin-top: 10px; border-radius: 12px; box-shadow: 0 8px 16px rgba(8, 123, 157, .18); letter-spacing: .01em; }
 .primary:hover { background: var(--blue-deep); transform: translateY(-1px); }
 .outline { background: #fffefa; color: var(--blue); border: 1px solid rgba(8, 123, 157, .34); position: relative; z-index: 1; }
 .outline:hover { background: var(--sky); }
