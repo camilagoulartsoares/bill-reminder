@@ -57,7 +57,7 @@ h1::first-letter { color: var(--blue); }
 .green, .paid { color: var(--green) !important; }
 .orange, .pending { color: var(--orange) !important; }
 
-.grid { display: grid; grid-template-columns: 360px 1fr; gap: 24px; align-items: start; }
+.grid { display: grid; grid-template-columns: 360px 1fr; gap: 26px; align-items: start; }
 .grid > form { position: sticky; top: 24px; box-shadow: var(--shadow); border-top: 3px solid var(--blue); background: linear-gradient(180deg, #ffffff 0%, var(--paper) 100%); }
 .section-title { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .section-title h2 { font: 700 22px Georgia, "Times New Roman", serif; margin: 0; color: var(--blue-deep); }
