@@ -79,7 +79,7 @@ textarea { height: 72px; resize: vertical; }
 .list .section-title { padding: 24px 24px 18px; margin: 0; border-bottom: 1px solid rgba(220, 231, 232, .72); }
 .list select { width: auto; margin: 0; padding: 9px 34px 9px 11px; font-size: 13px; font-weight: bold; border-color: rgba(8, 123, 157, .22); background: var(--sky); cursor: pointer; }
 .list select:hover { border-color: rgba(8, 123, 157, .5); }
-.bill { display: flex; align-items: center; gap: 13px; border-top: 1px solid var(--line); padding: 18px 22px; transition: background .18s ease, padding-left .18s ease; }
+.bill { display: flex; align-items: center; gap: 13px; border-top: 1px solid var(--line); padding: 19px 22px; transition: background .18s ease, padding-left .18s ease; }
 .bill:hover { background: #f7fbfc; padding-left: 26px; }
 .round { flex: none; width: 24px; height: 24px; padding: 0; border: 1px solid #aeb8c0; background: white; border-radius: 50%; cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
 .round:hover { border-color: var(--blue); transform: scale(1.08); box-shadow: 0 0 0 4px rgba(8, 123, 157, .1); }
