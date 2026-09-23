@@ -9,7 +9,7 @@
   --green: #157a57;
   --orange: #b45b17;
   --shadow: 0 18px 44px rgba(20, 56, 70, .09);
-  --radius: 18px;
+  --radius: 16px;
 }
 
 * { box-sizing: border-box; }
